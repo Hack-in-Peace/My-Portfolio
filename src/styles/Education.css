@@ -1,0 +1,104 @@
+.edu-section {
+  width: 100%;
+  background: linear-gradient(270deg, #0f172a, #3b0764, #0f172a);
+  padding: 80px 16px;
+  color: white;
+  box-sizing: border-box;
+}
+
+.edu-section::before,
+.edu-section::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.edu-section::before {
+  top: -100px;
+  left: -100px;
+  width: 300px;
+  height: 300px;
+  background: rgba(168, 85, 247, 0.6);
+}
+
+.edu-section::after {
+  bottom: -100px;
+  right: -100px;
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 99, 132, 0.4);
+}
+
+.edu-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.edu-timeline {
+  position: relative;
+  z-index: 1;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.edu-card {
+  position: relative;
+  background: #111113;
+  border-left: 3px solid #a855f7;
+  border-radius: 8px;
+  padding: 20px 20px 20px 60px;
+  margin-bottom: 30px;
+  color: #ddd;
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.1);
+}
+
+.edu-line {
+  position: absolute;
+  left: 22px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: #a855f7;
+  z-index: -1;
+}
+
+.edu-logo {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #a855f7;
+}
+
+.edu-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.edu-content h3 {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.edu-content h4 {
+  font-size: 1rem;
+  color: #aaa;
+  margin-bottom: 5px;
+}
+
+.edu-date {
+  font-size: 0.85rem;
+  color: #bbb;
+  display: block;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,143 @@
+.hero-section {
+  background-color: #0f0f1c;
+  color: #fff;
+  width: 100%;
+  /* min-height: 100vh; */
+  /* min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 80px 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  box-sizing: border-box; */
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.hero-left {
+  flex: 1;
+  padding-right: 30px;
+  animation: slideInLeft 1s ease forwards;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+
+.hero-left h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+.highlight {
+  color: #a855f7;
+}
+
+.hero-left h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.typed-text {
+  color: #a855f7;
+}
+
+.hero-left p {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+.resume-button {
+  background-color: #a855f7;
+  color: white;
+  padding: 12px 28px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 0 15px #a855f7;
+  transition: all 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: transparent;
+  color: #a855f7;
+  border: 2px solid #a855f7;
+  box-shadow: 0 0 25px #a855f7;
+  transform: scale(1.05);
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-pic {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #a855f7;
+  box-shadow: 0 0 20px #a855f7;
+  transition: transform 0.3s ease;
+  animation: slideInRight 1s ease forwards;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-left {
+    padding: 0;
+  }
+  .hero-left h1 {
+    font-size: 2.2rem;
+  }
+  .hero-left h2 {
+    font-size: 1.4rem;
+  }
+  .profile-pic {
+    margin-top: 30px;
+    width: 200px;
+    height: 200px;
+  }
+  .profile-pic:hover {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

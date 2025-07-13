@@ -1,0 +1,85 @@
+.exp-section {
+  width: 100%;
+  padding: 80px 16px;
+  color: white;
+  background: #0f0f1c;
+  box-sizing: border-box;
+}
+
+.exp-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+.exp-timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-left: 20px;
+}
+
+.exp-card {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  background: rgba(31, 15, 15, 0.05);
+  border-left: 3px solid #a855f7;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  padding: 20px 25px;
+  box-shadow: 0 8px 20px rgba(168, 97, 234, 0.15);
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease;
+}
+
+.exp-card:hover {
+  transform: translateY(-4px);
+}
+
+.exp-line {
+  position: absolute;
+  left: -11px;
+  top: 25px;
+  width: 20px;
+  height: 20px;
+  background-color: #a855f7;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.exp-logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #a855f7;
+}
+
+.exp-content h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.exp-content h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #cfcfcf;
+  margin-bottom: 5px;
+}
+
+.exp-date {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  color: #bbb;
+}
+
+.exp-content p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #ddd;
+}
