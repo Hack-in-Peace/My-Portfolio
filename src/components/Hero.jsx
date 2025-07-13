@@ -13,7 +13,7 @@ function Hero() {
           <p>
             I am a passionate web developer with hands-on experience in building clean UI/UX experiences. Skilled in the MERN stack, Java & Python, I enjoy crafting interactive websites and solving real-world problems.
           </p>
-          <a href="/resume.pdf" className="resume-button" target="_blank" rel="noreferrer">
+          <a href={process.env.PUBLIC_URL +"/Rima_Majumder_Resume.pdf"} className="resume-button" target="_blank" rel="noreferrer">
             Check Resume
           </a>
         </div>
